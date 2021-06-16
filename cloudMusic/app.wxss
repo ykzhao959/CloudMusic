@@ -1,0 +1,7 @@
+/* 引入全局的图标字体库 */
+@import "/static/iconfont/iconfont.wxss";
+
+/* 设置标签默认高度百分之百 */
+page {
+  height: 100%;
+}

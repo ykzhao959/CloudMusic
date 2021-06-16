@@ -1,0 +1,134 @@
+.searchContainer{
+  padding: 0 20rpx;
+}
+.header{
+  display: flex;
+  height: 60rpx;
+  line-height: 60rpx;
+  padding: 10rpx 0;
+}
+
+.searchInput{
+  position: relative;
+  flex: 1;
+  /* background: rgba(237,237,237,0.3); */
+  border: 1rpx solid #383737;
+  border-radius: 30rpx;
+  margin-left: 20rpx;
+}
+.clear{
+  position: absolute;
+  top: 0;
+  right: 20rpx;
+  font-size: 40rpx;
+  z-index: 10; /* 提高层级 这里不提高层级，点击的则是表单项 */
+}
+.cancel{
+  width: 100rpx;
+  text-align: right;
+}
+
+.searchIcon{
+  position: absolute;
+  top: 0;
+  left: 15rpx;
+  font-size: 45rpx;
+  color: rgb(26, 25, 25);
+}
+.searchInput input{
+  margin-left: 80rpx;
+  height: 60rpx;
+}
+.placeholder{
+  color: rgb(26, 25, 25);
+  font-size: 28rpx;
+}
+
+/* 热搜榜 */
+.hotContainer{
+  margin-top: 20rpx;
+}
+.hotContainer .title{
+  font-size: 28rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 1rpx solid rgb(218, 218, 218);
+}
+
+.hotList{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20rpx;
+}
+
+.hotItem{
+  width: 50%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 28rpx;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.hotItem .order{
+  margin: 0 15rpx;
+}
+.hotItem .iconImg{
+  width: 35rpx;
+  height: 20rpx;
+  margin-left: 10rpx;
+}
+
+/* 搜索查询内容 */
+.showSearchContent{
+  margin-top: 20rpx;
+}
+.searchContent{
+  color: #d43c33;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 28rpx;
+  border-bottom: 1rpx solid #d43c33;
+}
+.searchList{
+  margin-top: 20rpx;
+}
+.searchItem{
+  height: 95rpx;
+  line-height: 95rpx;
+  display: flex;
+}
+.searchItem .content{
+  flex: 1;
+  margin-left: 20rpx;
+  border-bottom: 1rpx solid rgb(233, 228, 228);
+}
+
+/* 搜索历史记录 */
+.history{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 50rpx;
+  margin-top: 30rpx;
+}
+.history .title{
+  height: 50rpx;
+  font-size: 30rpx;
+}
+.history .historyItem{
+  height: 50rpx;
+  font-size: 28rpx;
+  background: #ededed;
+  padding: 0 30rpx;
+  border-radius: 25rpx;
+  margin-left:20rpx;
+  margin-bottom: 20rpx;
+}
+.history .delete{
+  position: absolute;
+  bottom: 10rpx;
+  right: 15rpx;
+  font-size: 36rpx;
+}

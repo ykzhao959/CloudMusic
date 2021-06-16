@@ -1,0 +1,18 @@
+/* 头部区域 */
+.header{
+  padding-bottom: 26rpx;
+}
+
+.header .title{
+  font-size: 28rpx;
+  line-height: 70rpx;
+  color: #666;
+}
+
+.header .rightmore{
+  float: right;
+  font-size: 24rpx;
+  padding: 10rpx 20rpx;
+  border: 1px solid #333;
+  border-radius: 30rpx;
+}

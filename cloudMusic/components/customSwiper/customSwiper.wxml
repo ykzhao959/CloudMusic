@@ -1,0 +1,19 @@
+<!--  轮播图组件  -->
+<view class="parent">
+  <!-- <swiper autoplay="{{true}}" interval="3000" duration="1000" circular="true" class="swiper-block" bindchange="swiperChange"
+    previous-margin="80rpx" next-margin="80rpx" current="{{0}}"> -->
+    <swiper autoplay="{{true}}" interval="3000" duration="1000" circular="true" class="swiper-block" bindchange="swiperChange">
+    <block wx:for="{{imgUrls}}" wx:key="bannerId" wx:for-item="banitem">
+      <swiper-item class="swiper-item">
+        <!-- <image mode="aspectFill" src="{{banitem.pic}}" class="slide-image {{currentIndex == index ? 'active' : 'common'}}" /> -->
+        <image mode="aspectFill" src="{{banitem.pic}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 自定义轮播图进度点 -->
+  <view class="dots">
+    <block wx:for="{{imgUrls}}" wx:key="bannerId">
+      <view class="{{currentIndex == index ?'active':''}}"></view>
+    </block>
+  </view>
+</view>

@@ -1,0 +1,141 @@
+/* 视频头部区域 */
+.header{
+  height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rpx;
+}
+.header .header_video{
+  width: 80rpx;
+  height: 80rpx;
+}
+.header .header_logo{
+  width: 70rpx;
+  height: 70rpx;
+}
+.header .search{
+  position: relative;
+  flex: 1;
+  height: 60rpx;
+  border: 2rpx solid #d43c33;
+  border-radius: 40rpx;
+  margin: 0 15rpx 0 15rpx;
+}
+.search .search_icon{
+  position: absolute;
+  top: 0;
+  left: 10rpx;
+  width: 60rpx;
+  height: 60rpx;
+}
+.search .search_text{
+  margin-left: 80rpx;
+  height: 60rpx;
+  font-size: 28rpx;
+  color: #d43c33;
+}
+
+/* 导航区域 */
+.navScroll{
+  display: flex;
+  white-space: nowrap;
+  height: 60rpx;
+}
+
+.navScroll .navItem{
+  padding: 0rpx 30rpx;
+  font-size: 28rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.navScroll .navContrnt{
+  height: 60rpx;
+  box-sizing: border-box;
+}
+
+.navItem .active{
+  border-bottom: 1rpx solid #d43c33;
+}
+
+/* 视频列表区域 */
+.videoScroll{
+  margin-top: 20rpx;
+  /* calc：可以动态计算css宽高 */
+  /* 视口单位：vh vw 1vh = 1%的视口宽度  1vw = 1%的视口宽度*/
+  height: calc(100vh - 180rpx);
+}
+
+.videoItem{
+  padding: 0 3%;
+}
+
+/* .videoItem video{
+  width: 100%;
+  height: 360rpx;
+  border-radius: 20rpx;
+} */
+.videoItem .common{
+  width: 100%;
+  height: 360rpx;
+  border-radius: 20rpx;
+}
+.videoItem .content {
+  font-size: 28rpx;
+  height:80rpx;
+  line-height: 80rpx;
+  max-width: 500rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* footer */
+.footer {
+  border-top: 1rpx solid #eee;
+  padding: 20rpx 0;
+}
+.footer .avatar {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.footer  .nickName {
+  font-size: 26rpx;
+  vertical-align: middle;
+  margin-left: 20rpx;
+}
+
+.footer .comments_praised {
+  float: right;
+}
+
+.comments_praised .btn {
+  display: inline;
+  padding: 0;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.comments_praised .btn:after {
+  border: none;
+}
+
+.comments_praised .item {
+  margin-left: 100rpx;
+  position: relative;
+}
+
+.comments_praised .item .count {
+  position: absolute;
+  top: 8rpx;
+  font-size: 22rpx;
+  margin-left: 10rpx;
+  width: 80rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,90 @@
+.parent {
+  position: relative;
+}
+
+page{
+  background-color: #fff;
+}
+
+.swiper-block {
+  background: #fff;
+  height: 400rpx;
+  width: 100%;
+}
+
+.swiper-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: unset;
+  width: 600rpx;
+  height: 400rpx;
+  padding-top: 40rpx;
+  padding-bottom: 25rpx;
+  box-sizing: border-box;
+}
+
+.slide-image{
+  height: 350rpx;
+  width: 94%;
+  border-radius: 20rpx;
+  z-index: 1;
+  box-shadow: 0rpx 5rpx 20rpx rgba(0, 0, 0,0.5);
+  z-index: 20;
+  opacity: 1;
+}
+
+/* .slide-image{
+  height: 250rpx;
+  width: 500rpx;
+  border-radius: 10rpx;
+  margin: 0rpx 0rpx 0rpx 45rpx;
+  z-index: 1;
+  box-shadow: 10rpx 5px 20rpx rgba(0, 0, 0,0.5);
+}
+.active{
+  transform: scale(1.3);
+  transition: all .4s ease-in 0s;
+  z-index: 20;
+  opacity: 1;
+}
+.common{
+  transform: scale(1);
+  transition: all .2s ease-in 0s;
+  z-index: 0;
+  opacity: 0.4;
+} */
+.dots {
+  position: absolute;
+  bottom: 55rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.dots view {
+  width: 14rpx;
+  height: 14rpx;
+  margin: 0 6rpx;
+  border-radius: 10rpx;
+  background-color: #fff;
+}
+
+.dots .active {
+  width: 20rpx;
+  /* transition: all 0.2s ease-in 0s; */
+  background-color: #d43c33;
+}
+
+/* 改变指示点位置 */
+.wx-swiper-dots {
+  position: relative;
+  left: unset !important;
+  right: 0;
+}
+
+.wx-swiper-dots .wx-swiper-dots-horizontal {
+  margin-bottom: 0rpx;
+}

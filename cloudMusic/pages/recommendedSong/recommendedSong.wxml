@@ -1,0 +1,32 @@
+<view class="recommendSongContainer">
+    <!-- 头部区域 -->
+    <view class="header">
+        <image class="" src="/static/images/recommendedSong/recommendedSong.jpg"></image>
+        <view class="date">
+            <text class="day">{{day}} </text>
+            <text class="emline">/</text>
+            <text class="month">{{month}}</text>
+            <!-- <text class="year">2021</text> -->
+        </view>
+    </view>
+    <!-- 列表区域 -->
+    <view class="ListconTainer">
+        <view class="listHeard">
+            <text>播放全部</text>
+            <text class="changeMore">多选</text>
+        </view>
+
+        <!-- 内容区域 -->
+        <scroll-view scroll-y class="listScroll">
+            <!-- data-song="{{item}}"将item对象存入跳转函数带过去跳转页面 -->
+            <view class="scrollItem" wx:for="{{recommendList}}" wx:key="id" data-index="{{index}}" data-song="{{item}}" bindtap="toSongDetail">
+                <image src="{{item.album.picUrl}}"></image>
+                <view class="musicInfo">
+                    <text class="musicName">{{item.name}}</text>
+                    <text class="author">{{item.artists[0].name}}</text>
+                </view>
+                <text open-type="share" class="iconfont icon-gengduo"></text>
+            </view>
+        </scroll-view>
+    </view>
+</view>

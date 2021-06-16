@@ -84,7 +84,7 @@
 }
 
 .topListSwiper{
-  height: 450rpx;
+  height: 540rpx;
 }
 
 .swiperItem{

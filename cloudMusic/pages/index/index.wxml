@@ -56,7 +56,7 @@
       <swiper-item wx:for="{{topList}}" wx:key="name" wx:for-item="topitem">
         <view class="swiperItem">
           <view class="title">{{topitem.name}} ></view>
-          <view class="musicItem" wx:for="{{topitem.tracks}}" wx:key="id" wx:for-item="trackitem">
+          <view class="musicItem" wx:for="{{topitem.tarcks}}" wx:key="id" wx:for-item="trackitem">
             <image src="{{trackitem.al.picUrl}}"></image>
             <text class="count">{{index + 1}}</text>
             <text bindtap="toSongDetail" id="{{musicItem.id}}" class="musicName">{{trackitem.name}}</text>

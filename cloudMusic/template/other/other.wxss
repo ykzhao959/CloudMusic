@@ -1,0 +1,4 @@
+@import "../myTemplate/myTemplate.wxss";
+.otherTitle{
+    font-size: 50rpx;
+}

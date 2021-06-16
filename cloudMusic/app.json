@@ -7,7 +7,9 @@
     "pages/recommendedSong/recommendedSong",
     "pages/songDetail/songDetail",
     "pages/playlist/playlist",
-    "pages/search/search" 
+    "pages/search/search",
+    "template/myTemplate/myTemplate",
+    "template/other/other"
   ],
   "style": "v2",
   "sitemapLocation": "sitemap.json",
